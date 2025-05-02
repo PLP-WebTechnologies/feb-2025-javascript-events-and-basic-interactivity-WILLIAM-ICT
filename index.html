@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Event Handling & Interactive Elements</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>JavaScript Event Handling Playground</h1>
+  </header>
+
+  <!-- 1. Event Handling Section -->
+  <section>
+    <h2>Event Handling</h2>
+
+    <!-- Button click -->
+    <button id="clickBtn">Click Me</button>
+
+    <!-- Hover Effect -->
+    <div id="hoverDiv" class="hover-box">Hover over me!</div>
+
+    <!-- Keypress Detection -->
+    <input type="text" id="keypressInput" placeholder="Type something...">
+
+    <!-- Double Click / Long Press -->
+    <div id="secretAction" class="box">Double click or hold me!</div>
+  </section>
+
+  <!-- 2. Interactive Elements Section -->
+  <section>
+    <h2>Interactive Elements</h2>
+
+    <!-- Button that changes text or color -->
+    <button id="changeBtn">Change My Text</button>
+
+    <!-- Image Gallery -->
+    <div id="imageGallery">
+      <img src="image1.jpg" alt="Image 1" class="gallery-img" />
+      <img src="image2.jpg" alt="Image 2" class="gallery-img" />
+      <img src="image3.jpg" alt="Image 3" class="gallery-img" />
+    </div>
+
+    <!-- Tabs -->
+    <div id="tabs">
+      <button class="tab-btn" data-tab="1">Tab 1</button>
+      <button class="tab-btn" data-tab="2">Tab 2</button>
+      <button class="tab-btn" data-tab="3">Tab 3</button>
+
+      <div id="tab-content">
+        <div id="tab1" class="tab-content">This is Tab 1 content</div>
+        <div id="tab2" class="tab-content">This is Tab 2 content</div>
+        <div id="tab3" class="tab-content">This is Tab 3 content</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Form Validation Section -->
+  <section>
+    <h2>Form Validation</h2>
+    <form id="myForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required><br><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required><br><br>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div id="formFeedback"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
